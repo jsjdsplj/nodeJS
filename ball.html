@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<style type="text/css">
+		.ball{
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+		}
+		.ball1{
+			background: red;
+			margin-left: 0px;
+		}
+		.ball2{
+			background: yellow;
+			margin-left: 0px;
+		}
+		.ball3{
+			background: blue;
+			margin-left: 20px;
+		}
+		.display{
+			background: yellow;
+			margin-left: 500px;
+		}
+	</style>
+</head>
+<body>
+<div class="ball ball1"></div> 
+<div>你们好，欢迎来到bianmintaosan</div>
+<div class="ball ball2"></div>
+<div>我是你们的潘大哥</div>
+<div class="ball ball3"></div>
+<div class="display">开发中</div>
+
+<script type="text/javascript">
+	var ball1=document.querySelector('.ball1')
+	var ball2=document.querySelector('.ball2')
+	var ball3=document.querySelector('.ball3')
+
+function animate1(ball,distance){
+	ball.style.marginLeft = ball.style.marginLeft + 0;
+var marginleft=parseInt(ball.style.marginleft,10)marginleft=marginleft+distance
+ball.style.marginleft=marginleft+'px'
+}
+animate1(ball1,150)
+
+
+
+</script>
+
+
+</body>
+</html>
